@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('jardins', function (Blueprint $table) {
             $table->id();
+            $table->string('PlantClassification');
+            $table->integer('Plant Quantity');
+            $table->date('CreationDate');
             $table->timestamps();
         });
     }
