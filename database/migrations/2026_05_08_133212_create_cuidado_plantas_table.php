@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('cuidado_plantas', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            
         });
     }
 

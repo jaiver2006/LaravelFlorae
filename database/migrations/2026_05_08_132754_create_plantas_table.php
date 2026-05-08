@@ -13,8 +13,14 @@ return new class extends Migration
     {
         Schema::create('plantas', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
-        });
+            $table->id('plant_id');
+            $table->string('PlantName');
+            $table->string('PlantDescription');
+            $table->string('PlantStatus');
+            $table->string('PlantCare');
+            $table->string('PlantCare');
+    $table->timestamps();
+});
     }
 
     /**
